@@ -7,5 +7,9 @@ let chute = prompt('Escolha teu número mala, entre 1 e 500'); //o let dessa lin
 if (chute == numeroSecreto) {
     alert(`Boa Bahia, o número é ${numeroSecreto}`);
 } else {
-    alert('c é burro em perna')
+    if (chute > numeroSecreto) {
+        alert(`O número secreto é menor que ${chute}`);
+    } else {
+        alert(`O número secreto é menor que ${chute}`);
+    }
 }
