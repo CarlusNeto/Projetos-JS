@@ -1,20 +1,12 @@
-diaDaSemana = prompt('Qual dia da semana é?')
+alert('Brota no jogo do cleitin calabreso!');
+let numeroSecreto = 2;
+console.log(numeroSecreto)
+let chute = prompt('Escolha teu número mala, entre 1 e 500'); //o let dessa linha está sendo usado para deixar armazenado o número que a pessoa digitar
 
-if (diaDaSemana == 'Sábado') {
-    alert('Bom Final de Semana!');
-} else if (diaDaSemana == 'Domingo') {
-    alert('Bom Final de Semana!');
-} else if (diaDaSemana == 'Segunda'){
-    alert('Boa Semana!');
-} else if (diaDaSemana == 'Terça'){
-    alert('Boa Semana!');
-} else if (diaDaSemana == 'Quarta'){
-    alert('Boa Semana!');
-} else if (diaDaSemana == 'Quinta'){
-    alert('Boa Semana!');
-} else if (diaDaSemana == 'Sexta'){
-    alert('Sextou carialiooooo');
-}else {
-    alert('Ta errado isso ai Jamelão');
+// se o chute for igual ao número secreto
+if (chute == numeroSecreto) {
+    alert(`Boa Bahia, o número é ${numeroSecreto}`);
+} else {
+    alert('c é burro em perna')
 }
 
