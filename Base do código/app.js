@@ -7,9 +7,9 @@ let chute = prompt('Escolha teu número mala, entre 1 e 500'); //o let dessa lin
 if (chute == numeroSecreto) {
     alert(`Boa Bahia, o número é ${numeroSecreto}`);
 } else {
-    if (chute > numeroSecreto) {
+    if (chute > numeroSecreto) { //If está sendo usado para que tome decisões, quando o chute é maior que o número secreto ele retorna o alerta dizendo que o número secreto é menor que o chute(valor)
         alert(`O número secreto é menor que ${chute}`);
-    } else {
+    } else { //aqui ele mostra o alerta se o chute for maior que número secreto
         alert(`O número secreto é menor que ${chute}`);
     }
 }
