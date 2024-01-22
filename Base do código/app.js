@@ -1,15 +1,25 @@
-alert('Brota no jogo do cleitin calabreso!');
-let numeroSecreto = 2;
+alert('Boas vindas ao jogo do número secreto');
+let numeroSecreto = parseInt(Math.random() * 10 + 1);
 console.log(numeroSecreto)
-let chute = prompt('Escolha teu número mala, entre 1 e 500'); //o let dessa linha está sendo usado para deixar armazenado o número que a pessoa digitar
+let chute;
+let tentativas = 1;
 
-// se o chute for igual ao número secreto
-if (chute == numeroSecreto) {
-    alert(`Boa Bahia, o número é ${numeroSecreto}`);
-} else {
-    if (chute > numeroSecreto) { //If está sendo usado para que tome decisões, quando o chute é maior que o número secreto ele retorna o alerta dizendo que o número secreto é menor que o chute(valor)
-        alert(`O número secreto é menor que ${chute}`);
-    } else { //aqui ele mostra o alerta se o chute for maior que número secreto
-        alert(`O número secreto é menor que ${chute}`);
+// enquanto chute não for igual ao n.s.
+while (chute != numeroSecreto) {
+    chute = prompt('Escolha um número entre 1 e 10');
+    // se chute for igual ao número secreto
+    if (chute == numeroSecreto) {
+       break;
+    } else {
+        if (chute > numeroSecreto) {
+            alert(`O número secreto é menor que ${chute}`)
+        } else {
+            alert(`O número secreto é maior que ${chute}`)
+        }
+        // tentativas = tentativas + 1
+        tentativas++
     }
 }
+
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa'
+alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}`);
